@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="35dp"
+    android:paddingBottom="16dp"
+    android:background="#e1eded"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/home" />
+
+    <TextView
+        android:id="@+id/helppage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sentence1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helppage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/helppage"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/instruction1"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sentence1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/instruction1"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/instruction2"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instruction1"
+        android:layout_marginTop="0dp"
+        android:text="@string/instruction2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/instruction3"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instruction2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/instruction3"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/getStarted"
+        android:backgroundTint="#b2bcbc"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btngetS"
+        android:layout_below="@+id/instruction3"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

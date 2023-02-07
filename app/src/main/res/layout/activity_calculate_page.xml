@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatePage">
+
+    <TextView
+        android:id="@+id/input1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/input1"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/billAmt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input1"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/hint1"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/billAmt"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/input2"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/selTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/billAmt"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="italic|bold"
+        android:textColor="#b2bcbc"
+        android:textSize="15sp" />
+
+    <GridLayout
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/input2"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:backgroundTint="#b2bcbc"
+            android:id="@+id/tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/tip1" />
+
+        <Button
+            android:backgroundTint="#b2bcbc"
+            android:id="@+id/tip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:text="@string/tip2"/>
+
+        <Button
+            android:backgroundTint="#b2bcbc"
+            android:id="@+id/tip3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/tip3" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/input3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="280dp"
+        android:text="@string/input3"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/noPax"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input3"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/hint2"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <Button
+        android:backgroundTint="#b2bcbc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/calc"
+        android:id="@+id/calculate"
+        android:layout_below="@+id/noPax"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/resultbg"
+        android:layout_width="480dp"
+        android:layout_height="480dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-142dp"
+        android:contentDescription="@string/background"
+        android:src="@drawable/resultbg" />
+
+    <TextView
+        android:id="@+id/result1text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resultbg"
+        android:layout_alignEnd="@+id/resultbg"
+        android:layout_alignBottom="@+id/resultbg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="130dp"
+        android:text="@string/result1"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/result1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resultbg"
+        android:layout_alignEnd="@+id/resultbg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="175dp"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/result2text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resultbg"
+        android:layout_alignEnd="@+id/resultbg"
+        android:layout_alignBottom="@+id/resultbg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="235dp"
+        android:text="@string/result2"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_below="@+id/result1"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/result2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resultbg"
+        android:layout_alignEnd="@+id/resultbg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="270dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/result3text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resultbg"
+        android:layout_alignEnd="@+id/resultbg"
+        android:layout_alignBottom="@+id/resultbg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="235dp"
+        android:text="@string/result3"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_below="@+id/result1"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/result3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resultbg"
+        android:layout_alignEnd="@+id/resultbg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="270dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
